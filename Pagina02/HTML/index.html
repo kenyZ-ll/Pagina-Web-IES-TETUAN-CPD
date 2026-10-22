@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi instituto IES Tetuán de las Victorias</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../IMGS/favicon.svg" />
+  </head>
+  <body>
+    <!-- El mismo header de la primera página, así mantengo el diseño de Figma en todas =) -->
+    <header id="top">
+      <div class="logo-titulo-navegador">
+        <span class="logo">
+          <img src="../IMGS/favicon.svg" alt="logo-svg-hecho-por-mi" />
+        </span>
+
+        <!-- Igual que antes: el alto del logo lo divido a la mitad, título arriba y navegador abajo -->
+        <div class="titulo-navegador">
+          <!-- El título de la página web -->
+          <div class="titulo">
+            <span class="text-bold">Mi instituto IES Tetuán de las Victorias</span>
+          </div>
+
+          <!-- El nav de la página, ahora el botón negro es "información del centro" porque estamos aquí -->
+          <div class="navegador">
+            <nav>
+              <ul>
+                <li><a href="../../Pagina01/HTML/index.html" class="boton-secundario">home</a></li>
+                <li>
+                  <a href="#ubicacion" class="boton-principal">información del centro</a>
+                </li>
+                <li>
+                  <a href="../../Pagina03/HTML/index.html" class="boton-secundario">¿Qué he aprendido?</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Aquí va la foto del instituto de fondo, y encima la caja con la ubicación (qué ganas de verla terminada) -->
+    <div class="fondo-tetuan" id="ubicacion">
+      <!-- Este div solo sirve para dejar el hueco a la izquierda y que se vea la foto -->
+      <div class="espacio"></div>
+
+      <!-- Y este es el cuadrado gris con la información -->
+      <div class="caja-ubicacion">
+        <span class="text-bold-azul">Ubicación y Entorno</span>
+
+        <p class="texto-ubicacion">
+          El IES Tetuán de las Victorias se encuentra ubicado en pleno distrito de Tetuán, Madrid, en la Calle de Francos Rodríguez, 2, 28039.
+        </p>
+
+        <a href="https://maps.app.goo.gl/zzCtmJfKcnehhQ41A" class="link-maps">LINK MAPS!!</a>
+
+        <ul class="lista-entorno">
+          <li>
+            <b>Entorno:</b> Emplazado en un barrio dinámico y comercial, cercano a amplias zonas de servicios y áreas verdes, perfecto para la vida académica y profesional de los estudiantes.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Las 3 tarjetas con Flexbox, una al lado de la otra dentro de un fondo gris -->
+    <div class="fondo-tarjetas">
+      <!-- Tarjeta 1: Instalaciones -->
+      <div class="tarjeta">
+        <span class="text-bold-azul">Instalaciones:</span>
+        <p>
+          Las Instalaciones del IES TETUAN, aunque tenga bastante historia el centro, se actualizan al nivel de las exigencias actuales del mercado laboral, mas sitios de ocio como terraza exterior y cafetería interna para que el alumno pueda sentirse a gusto en todo momento.
+        </p>
+        <img src="../IMGS/aula.png" alt="aula-del-instituto" class="imagen-tarjeta" />
+      </div>
+
+      <!-- Tarjeta 2: Servicio al alumnado -->
+      <div class="tarjeta">
+        <span class="text-bold-azul titulo-centrado">Servicio al alumnado:</span>
+        <img src="../IMGS/alumnos.png" alt="alumnos-juntando-las-manos" class="imagen-tarjeta imagen-centrada" />
+        <ul>
+          <li>Excursiones he iniciativas a la formación laboral</li>
+          <li>Personal con conocimientos para ayudar en todo lo que puedan.</li>
+          <li>Actividades internas para que los alumnos se conozcan mejor.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 3: Conexión en transporte -->
+      <div class="tarjeta">
+        <span class="text-bold-azul">Conexión en transporte:</span>
+        <p>
+          Excelente acceso mediante Metro (línea 1: Estación de Estrecho / Alvarado, y línea 7: Francos Rodríguez) y múltiples líneas de autobús urbano (Líneas 44, 64, 126, 128).
+          <br /><br />
+          Además de un Parking interno gratuito tanto para el profesorado como el alumnado.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+/* ===== FUENTE INTER (local) ===== */
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===== COLORES ===== */
+:root {
+  --azul: #0095ff;
+  --negro: #202020;
+  --fondos-claros: #f2f2f2;
+  --texto-blanco: #ffffff;
+}
+
+/* ===== GENERAL ===== */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--negro);
+  background: var(--fondos-claros);
+}
+
+/* ===== TEXTOS ===== */
+.text-bold {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--negro);
+}
+
+.text-bold-azul {
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--azul);
+}
+
+.text-bold-blanco {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--texto-blanco);
+}
+
+.text-blanco {
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--texto-blanco);
+}
+.text-info-logo {
+  font-weight: 400;
+  font-size: 24px;
+}
+/* ===== CABECERA ===== */
+.logo-titulo-navegador {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.logo {
+  margin-right: 2%;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.titulo-navegador {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.navegador ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.navegador a {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: var(--texto-blanco);
+  text-decoration: none;
+}
+
+.boton-principal {
+  background-color: var(--negro);
+}
+
+.boton-secundario {
+  background-color: var(--azul);
+}
+
+/* ===== INFO LOGO ===== */
+.info-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.imagen-01 {
+  width: 27%;
+  margin-top: 2%;
+}
+
+.imagen-02 {
+  width: 30%;
+}
+
+.shuriken-sasuke,
+.zapatilla-nike {
+  display: block;
+  width: 100%;
+  height: 445px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  align-items: top;
+  justify-content: center;
+}
+
+.infotexto-infologo {
+  width: 35%;
+  margin-top: 5%;
+}
+
+.infotexto {
+  height: 50%;
+  margin-bottom: 10%;
+}
+
+.infologo {
+  height: 50%;
+  margin-top: 1rem;
+  background-color: var(--negro);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Una imagen no cambia con "color", así que usamos filter para ponerla blanca */
+.logo-blanco {
+  width: 60%;
+  filter: brightness(0) invert(1);
+}
+
+/* ===== QUIÉN SOY ===== */
+.fondo-quien-soy {
+  background-color: var(--negro);
+  display: flex;
+  justify-content: space-around;
+  align-items: bottom;
+  padding: 4% 6%;
+}
+
+.quien-soy {
+  width: 50%;
+}
+
+.quien-soy .text-bold-blanco {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+/* ===== IMÁGENES (sin sombra ni borde) ===== */
+.imagen-01 {
+  width: 33.33%;
+}
+
+.imagen-02 {
+  width: 43.33%;
+}
+
+.shuriken-sasuke,
+.zapatilla-nike {
+  display: block;
+  width: 90%;
+  height: auto;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.imagen {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

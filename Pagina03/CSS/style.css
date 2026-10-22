@@ -1,0 +1,218 @@
+/* ===== FUENTE INTER (local) ===== */
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../FUENTES/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===== COLORES ===== */
+:root {
+  --azul: #0095ff;
+  --negro: #202020;
+  --fondos-claros: #f2f2f2;
+  --texto-blanco: #ffffff;
+}
+
+/* ===== GENERAL ===== */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--negro);
+  background: var(--fondos-claros);
+}
+
+/* ===== TEXTOS ===== */
+.text-bold {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--negro);
+}
+
+.text-bold-azul {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--azul);
+}
+
+.text-bold-blanco {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--texto-blanco);
+}
+
+.text-blanco {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--texto-blanco);
+}
+
+/* ===== CABECERA ===== */
+.logo-titulo-navegador {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.logo {
+  margin-right: 2%;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.titulo-navegador {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.navegador ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.navegador a {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: var(--texto-blanco);
+  text-decoration: none;
+}
+
+.boton-principal {
+  background-color: var(--negro);
+}
+
+.boton-secundario {
+  background-color: var(--azul);
+}
+
+/* ===== CERTIFICADO ===== */
+.certificado {
+  width: 50%;
+  margin: 3% auto;
+}
+
+.certificado img {
+  display: block;
+  width: 100%;
+}
+
+.texto-certificado {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.texto-certificado .text-bold-azul {
+  font-size: 24px;
+}
+
+/* ===== GRADO MEDIO (Grid de 2 columnas) ===== */
+.fondo-grado {
+  background-color: var(--negro);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+  align-items: center;
+  padding: 4% 6%;
+}
+
+.imagen-grado {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== MIS PROYECTOS (Grid) ===== */
+.proyectos {
+  padding: 3% 6% 1% 6%;
+}
+
+.proyectos .text-bold-azul {
+  font-size: 24px;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3%;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.imagen-lenguajes {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.links-github {
+  display: grid;
+  gap: 1rem;
+}
+
+.link-github {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  color: var(--negro);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-github img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* ===== TECNOLOGÍAS (Grid de iconos) ===== */
+.tecnologias {
+  padding: 3% 6%;
+  text-align: center;
+}
+
+.titulo-iconos {
+  display: block;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.iconos-skills {
+  display: block;
+  margin: 0 auto;
+}
